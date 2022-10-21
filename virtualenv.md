@@ -1,4 +1,4 @@
-# Cheatsheet for pythons virtualenv package
+# Cheatsheet for managing virtual environments using pythons virtualenv package
 
 ## Create a new virtual environment using virtualenv
 ```
@@ -20,5 +20,8 @@ pip install packagename --target env_basepath/env_name/
 python -m ipykernel install --user --target env_basepath/env_name/
 
 ```
-
+## Install code from github repository to environemnt
+```
+pip install git+https://path.to.repo.git --target env_basebatch/env_name/
+```
 
