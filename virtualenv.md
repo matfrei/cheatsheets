@@ -10,10 +10,15 @@ virtualenv --system-site-packages -p python3 env_name
 source env_basepath/env_name/bin/activate
 ```
 ## Install packages using pip into a specific virtual environment
+
 ```
-pip install packagename --target=env_basepath/env_name/
+pip install packagename --target env_basepath/env_name/
+```
 
+## Wrap virtuelenv environment into jupyter kernel
+```
+python -m ipykernel install --user --target env_basepath/env_name/
 
-
+```
 
 
