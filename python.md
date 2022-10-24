@@ -2,6 +2,14 @@
 
 ## Filehandling, pickling, etc.
 
+## String operations, Regexes, etc.
+
+### Find all occurrences of a given substring in a string
+```
+import re
+re.finditer(substring, string)
+```
+
 ## Sorting, datastructures, etc.
 
 ### Sort a list in Python
