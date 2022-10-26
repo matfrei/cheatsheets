@@ -20,8 +20,13 @@ pip install packagename --target env_basepath/env_name/
 python -m ipykernel install --user --target env_basepath/env_name/
 
 ```
-## Install code from github repository to environemnt
+## Install code from github repository to environment
 ```
 pip install git+https://path.to.repo.git --target env_basebatch/env_name/
 ```
+
+### Install code from a subfolder or subpackage on github
+Example: pycocotools
+```
+pip install -U 'git+https://github.com/leimao/cocoapi.git#subdirectory=PythonAPI'
 
