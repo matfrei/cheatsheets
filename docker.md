@@ -78,6 +78,6 @@ set -ex
 BASE_DIR="$(git rev-parse --show-toplevel)"
 REPO="$(git config --get remote.origin.url | sed 's/.*://;s/.git$//')"
 REGISTRY="repo.url.com:1234"
-docker build -f "${BASE_DIR}"/gpulab/Dockerfile -t "${REGISTRY}"/"${REPO}":latest "${BASE_DIR}"/.
+docker build -f "${BASE_DIR}"/path/to/Dockerfile -t "${REGISTRY}"/"${REPO}":latest "${BASE_DIR}"/.
 docker push "${REGISTRY}"/"${REPO}":latest
 ```
