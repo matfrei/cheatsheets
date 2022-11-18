@@ -70,7 +70,15 @@ docker run -t -i --rm --entrypoint bash repo.url.com:1234/username/reponame/cont
 ## Transferring files to and from containers
 
 ```
-sudo docker cp /path/to/localfile <running_container_id>:/path/in/container/
+docker cp /path/to/localfile <running_container_id>:/path/in/container/
+```
+
+## Clearing all containers from a machine when things have gone bad and a fresh start is needed
+
+(or you have filled the harddisk with lot's of docker images and disk space is urgently needed)
+
+```
+docker system prune --all
 ```
 
 ## Reconstruct a dockerfile from the container 
