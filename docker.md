@@ -32,6 +32,12 @@ docker exec -it <running_container_id> /bin/bash
 docker run -t -i --rm --entrypoint bash repo.url.com:4567/username/reponame/containername:tag
 ```
 
+## Transferring files to and from containers
+
+```
+sudo docker cp /path/to/localfile hungry_ishizaka:/path/in/container/
+```
+
 ## Reconstruct a dockerfile from the container 
 
 ```
@@ -45,7 +51,7 @@ sudo docker history --no-trunc repo.url.com:4567/username/reponame/containername
 set -ex
 BASE_DIR="$(git rev-parse --show-toplevel)"
 REPO="$(git config --get remote.origin.url | sed 's/.*://;s/.git$//')"
-REGISTRY="gitlab.ilabt.imec.be:4567"
+REGISTRY="repo.url.com:4567"
 docker build -f "${BASE_DIR}"/gpulab/Dockerfile -t "${REGISTRY}"/"${REPO}":latest "${BASE_DIR}"/.
 docker push "${REGISTRY}"/"${REPO}":latest
 ```
