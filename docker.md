@@ -14,6 +14,11 @@ sudo docker build -f /path/to/Dockerfile -t repo.url.com:4567/username/reponame/
 docker run --gpus all -it -d -p 8080:8080 minedojo/minedojo:latest tail -f /dev/null
 ```
 
+### Stop a container
+```
+docker stop <running_container_id>
+
+
 ### See which containers are currently running
 
 ```
