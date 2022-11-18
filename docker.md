@@ -52,10 +52,13 @@ docker ps
 docker exec -it <running_container_id> /bin/bash
 ```
 **Hint:** When working with container ids, there is no need to copy the full id, only enough to make the id unique among the containers on the system
+
 For instance, if I have two containers on my system with ids ``9446123a7c1a0575e689623222b9df70d509715218e443c38fbc4e03029336d5``and ``13fce77a7c84450a679caaaa6df030711010b3490dd5c86c627d08dc008d2b47``, I can get a shell on the latter container simply by executing:
+
 ``
 docker exec -it 1 /bin/bash
 ``
+
 since only one of the available containers has an id that starts with ``1``.
 
 ### Instantiate a container from a docker image and get an immediate shell in the container 
