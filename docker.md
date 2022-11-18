@@ -75,7 +75,7 @@ docker cp /path/to/localfile <running_container_id>:/path/in/container/
 
 ## Clearing all containers from a machine when things have gone bad and a fresh start is needed
 
-(or you have filled the harddisk with lot's of docker images and disk space is urgently needed)
+(or you have filled the harddisk with lots of docker images and disk space is urgently needed)
 
 ```
 docker system prune --all
