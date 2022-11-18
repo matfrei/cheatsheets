@@ -1,4 +1,4 @@
-# docker cheatsheet
+# Useful commands in docker
 
 
 ### see which containers are currently running
