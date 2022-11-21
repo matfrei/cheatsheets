@@ -93,6 +93,14 @@ docker container prune
 ```
 removes just the stopped containers
 
+
+## Hosting webservers in docker containers
+'''
+docker run -p 8888:80 prakhar1989/static-site
+'''
+Port 80 from the docker container is mapped to port 8888 of the system
+
+
 ## Reconstruct a dockerfile from the container 
 
 ```
