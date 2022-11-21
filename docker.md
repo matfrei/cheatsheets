@@ -40,6 +40,11 @@ docker run --gpus all -it -d -p 8080:8080 minedojo/minedojo:latest tail -f /dev/
 docker stop <running_container_id>
 ```
 
+### See which images are currently pulled
+```
+docker images
+```
+
 ### See which containers are currently running
 
 ```
