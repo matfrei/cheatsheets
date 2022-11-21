@@ -86,6 +86,12 @@ docker cp /path/to/localfile <running_container_id>:/path/in/container/
 ```
 docker system prune --all
 ```
+cleans **everything**
+
+```
+docker container prune
+```
+removes just the stopped containers
 
 ## Reconstruct a dockerfile from the container 
 
