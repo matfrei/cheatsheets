@@ -48,8 +48,9 @@ docker images
 ### See which containers are currently running
 
 ```
-docker ps
+docker ps [- a]
 ```
+The optional parameter -a shows containers who have been running, but have stopped, without -a it's just the running containers
 
 ### Interact with a running docker container
 
