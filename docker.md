@@ -79,6 +79,11 @@ docker run -t -i --rm --entrypoint bash repo.url.com:1234/username/reponame/cont
 docker cp /path/to/localfile <running_container_id>:/path/in/container/
 ```
 
+## Mirror a directory from your harddrive into the docker container upon creation
+```
+docker run -t -i -v <host_dir>:<container_dir>  ubuntu /bin/bash
+```
+
 ## Clearing all containers from a machine when things have gone bad and a fresh start is needed
 
 (or you have filled the harddisk with lots of docker images and disk space is urgently needed)
