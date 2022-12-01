@@ -55,9 +55,6 @@ A
 B
 ```
 
-
-```
-
 ## Map, Reduce and Filter
 
 ### Reduce
