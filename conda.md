@@ -3,7 +3,7 @@
 ## create an anaconda environment
 
 ```
-conda env create envname
+conda env create --name envname
 ```
 
 ## create an anaconda environment in a specificed directory
