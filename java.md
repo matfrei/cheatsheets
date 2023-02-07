@@ -2,6 +2,9 @@
 # Compile a java file
 ```javac -cp src_folder src/SourceFileWEntrypoint.java ```
 
+or better 
+```javac -sourcepath src -d classes src/SourceFileWEntrypoint.java```
+
 # Run a compiled class file
 ``` java -cp location_of_classfiles MainClassFileName```
 
