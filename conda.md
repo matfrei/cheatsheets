@@ -11,3 +11,7 @@ conda env create --name envname
 ```
 conda env create --prefix /path/to/dir
 ```
+
+## downgrade python install in a conda environment
+```
+conda install python=3.7
