@@ -21,3 +21,9 @@ conda install python=3.7
 ```
 python -m ipykernel install --user --name=firstEnv
 ```
+
+## find all python versions on a machine
+```
+whereis python3
+```
+
