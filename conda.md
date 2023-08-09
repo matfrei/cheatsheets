@@ -15,3 +15,9 @@ conda env create --prefix /path/to/dir
 ## downgrade python install in a conda environment
 ```
 conda install python=3.7
+```
+
+## add conda kernel to jupyter
+```
+python -m ipykernel install --user --name=firstEnv
+```
