@@ -29,4 +29,9 @@ pip install git+https://path.to.repo.git --target env_basebatch/env_name/
 Example: pycocotools
 ```
 pip install -U 'git+https://github.com/leimao/cocoapi.git#subdirectory=PythonAPI'
+```
 
+### Export virtualenv into a requirements.txt file
+```
+pip freeze > requirements.txt
+```
