@@ -12,9 +12,9 @@ conda env create --name envname
 conda env create --prefix /path/to/dir
 ```
 ## export an anaconda enviroment to a .yaml file
-'''
-conda env export > <environment-name>.yml
-'''
+```
+conda env export environment-name.yml
+```
 
 
 ## downgrade python install in a conda environment
