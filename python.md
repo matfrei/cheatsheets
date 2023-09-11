@@ -1,4 +1,4 @@
-# Useful commands in python
+ Useful commands in python
 
 ## Filehandling, pickling, etc.
 
@@ -22,6 +22,10 @@ list.sort(reverse=True, key = lambda list_element: list_element[1]) # in a list 
 ```
 **Note**: Sorting happens **in-place**
 
+### Argsort a numpy array
+```
+sort_idcs = np.argsort(similarity.tolist())
+```
 
 ## Collections
 
