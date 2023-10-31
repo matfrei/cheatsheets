@@ -71,6 +71,11 @@ sorted(d.items())
 [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 ```
 
+For nested defaultdicts do
+```
+ddict = defaultdict(lambda: defaultdict(list))
+```
+
 ## Map, Filter and Reduce
 
 ### Map
