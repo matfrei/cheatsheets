@@ -101,7 +101,7 @@ product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
 ```
 
 ## Other neat tools
-tqdm for progress bars
+### tqdm for progress bars
 ```
 from tqdm import tqdm
 
