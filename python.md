@@ -73,7 +73,7 @@ sorted(d.items())
 
 For nested defaultdicts do
 ```
-ddict = defaultdict(lambda: defaultdict(list))
+d = defaultdict(lambda: defaultdict(list))
 ```
 
 ## Map, Filter and Reduce
@@ -100,5 +100,13 @@ from functools import reduce
 product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
 ```
 
+## Other neat tools
+tqdm for progress bars
+```
+from tqdm import tqdm
+
+for element in tqdm(list):
+    ## Do some stuff here with element
+```
 
 
