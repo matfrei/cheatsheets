@@ -10,7 +10,7 @@ git checkout -b branchname
 git revert --no-commit <commitid>
 
 ## Update a forked repo with changes upstream
-
+**Note:** On github, there is also a button which simply does that, completely without shell commands
 ```
 git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 git fetch upstream
