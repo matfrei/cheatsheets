@@ -40,7 +40,7 @@ sudo lsof -i | grep LISTEN
 
 ## Debian-style systems using apt
 
-## Doing upgrades
+### Doing upgrades
 
 Package upgrades
 
@@ -67,3 +67,14 @@ sudo apt install --fix-broken
 ```
 sudo apt install --upgrade <xxx>
 ```
+# Resolving cuda issues
+
+## Check whether videocards are correctly recognized by the machine
+```
+lspci | grep -i vga
+```
+## Check kernel buffer information on video cards
+```
+dmesg | grep -i vga
+```
+
