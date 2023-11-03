@@ -13,3 +13,8 @@ Use du (disk usage, with -h flag for human readable format) to show the remainin
 ```
 du -h
 ```
+# Open ports
+
+```
+sudo lsof -i | grep LISTEN
+```
