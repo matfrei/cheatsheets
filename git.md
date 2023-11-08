@@ -9,7 +9,7 @@ git init
 git add *.py
 git commit
 git remote add origin <repourl here>
-git push -u -f origin master
+git push -u -f origin main
 ```
 
 ## Create a new branch in a repository
