@@ -17,6 +17,11 @@ git push -u -f origin master
 git checkout -b branchname
 ```
 
+## Delete a local branch
+```
+git branch --delete <branchname>
+```
+
 ## Set repo to a previous commit without changing head
 ```
 git revert --no-commit <commitid>
