@@ -108,5 +108,10 @@ from tqdm import tqdm
 for element in tqdm(list):
     ## Do some stuff here with element
 ```
+## Assertions and exception handling
+### Assertions
+```
+assert number > 0, f"number greater than 0 expected, got: {number}"
+```
 
 
