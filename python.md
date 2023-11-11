@@ -108,6 +108,14 @@ from tqdm import tqdm
 for element in tqdm(list):
     ## Do some stuff here with element
 ```
+## Pathlib
+#### Create dir if it doesn't exist yet
+```
+from pathlib import Path
+Path('stampscollection/monte_carlo/').mkdir(parents=True, exist_ok=True)
+```
+
+
 ## Assertions and exception handling
 ### Assertions
 ```
