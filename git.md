@@ -12,6 +12,11 @@ git remote add origin <repourl here>
 git push -u -f origin main
 ```
 
+## To allow mergin of unrelated histories
+```
+git pull origin main --allow-unrelated-histories
+```
+
 ## Create a new branch in a repository
 ```
 git checkout -b branchname
