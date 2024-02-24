@@ -31,4 +31,12 @@ python -m ipykernel install --user --name=firstEnv
 ```
 whereis python3
 ```
+## init conda base env when you haven't configured your bashrc file to do so by default
+```
+eval "$(/PATH/TO/ANACONDA/bin/conda shell.bash hook)" 
+```
+or for any other shell
+```
+eval "$(/PATH/TO/ANACONDA/bin/conda shell.YOUR_SHELL_NAME hook)" 
+```
 
