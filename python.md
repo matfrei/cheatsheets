@@ -115,6 +115,16 @@ from pathlib import Path
 Path('stampscollection/monte_carlo/').mkdir(parents=True, exist_ok=True)
 ```
 
+## Iterators
+
+### Elegant way to increment a global counter
+```
+import itertools
+
+global_counter1 = itertools.count()
+
+next(global_counter1)
+```
 
 ## Assertions and exception handling
 ### Assertions
