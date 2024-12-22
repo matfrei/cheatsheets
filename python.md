@@ -138,7 +138,9 @@ assert number > 0, f"number greater than 0 expected, got: {number}"
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,3"
+rank = int(os.environ["RANK"])
+device = torch.device(f"cuda:{rank}")
 ```
 
 
