@@ -132,4 +132,15 @@ next(global_counter1)
 assert number > 0, f"number greater than 0 expected, got: {number}"
 ```
 
+## Shell Interface
+### Set Environment Variable
+```
+import os
+
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+```
+
+
+
 
