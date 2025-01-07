@@ -1,7 +1,7 @@
 # cheatsheets
 
 
-### Resource on how to write markup:
+### Resource on how to write Markdown:
 
 [Github tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
