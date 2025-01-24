@@ -62,6 +62,7 @@ B
 ## Defaultdict
 Very handy to avoid having to initialize lists separately when using them as values in a dictionary.
 ```
+from collections import Defaultdict
 s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
 d = defaultdict(list)
 for k, v in s:
