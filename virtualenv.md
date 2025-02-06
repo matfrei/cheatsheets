@@ -24,6 +24,11 @@ python -m ipykernel install --user --target env_basepath/env_name/
 ```
 pip install git+https://path.to.repo.git --target env_basebatch/env_name/
 ```
+with additional features:
+
+```
+pip install git+https://github.com/your_username/smolagents.git#egg=smolagents[transformers]
+```
 
 ### Install code from a subfolder or subpackage on github
 Example: pycocotools
