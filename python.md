@@ -144,6 +144,15 @@ rank = int(os.environ["RANK"])
 device = torch.device(f"cuda:{rank}")
 ```
 
+## Type hints
+Starting at Python3.5, are just annotations to be enforced by external tools or IDEs.
 
+```
+from typing import List, Set, Dict, Tuple
 
+def generateLineString(self, current_line: List[str], maxWidth: int, is_last: bool = False):
+""" This function implements etc.etc.
+"""
+```
+[Great cheatsheet detailing type hints in Python](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
