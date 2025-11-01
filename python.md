@@ -162,3 +162,78 @@ def generateLineString(self, current_line: List[str], maxWidth: int, is_last: bo
 ```
 [Great cheatsheet detailing type hints in Python](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
+## Structural Pattern Matching
+Finally since python 3.10 if/else chains can be avoided using pattern matching
+
+```
+def handle_status(code: int) -> str:
+    match code:
+        case 200:
+            return "OK"
+        case 404:
+            return "Not Found"
+        case 500:
+            return "Server Error"
+        case _:
+            return "Unknown"
+```
+## Data classes
+Data classes simpify class boilerplate.
+
+```
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: float
+    y: float
+```
+
+## Modern Tooling
+
+- ``black`` for consistent formatting
+- ``isort`` for import ordering
+- ``ruff`` for linting and static analysis
+- ``uv`` or ``poetry`` for package management
+
+```
+black .
+isort .
+ruff check .
+```
+
+Using poetry:
+```
+poetry new myproject
+poetry add requests
+poetry run python main.py
+```
+
+Using uv:
+```
+uv init
+uv add httpx
+```
+
+## Testing
+
+Use pytest for tests, and include type checking + linting in your CI pipeline.
+**TODO: expand**
+
+## Performance and Efficiency
+
+- Use ``asyncio`` or ``trio`` for concurrency (network I/O, async APIs)
+- Use ``functools.cache`` or ``lru_cache`` for memoization
+- Profile with ``cProfile`` or ``perf`` if needed
+
+```
+from functools import cache
+
+@cache
+def fib(n: int) -> int:
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+```
+
+
