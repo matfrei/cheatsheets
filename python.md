@@ -215,6 +215,17 @@ uv init
 uv add httpx
 ```
 
+| Purpose               | Recommended Tool        |
+| --------------------- | ----------------------- |
+| Linting               | `ruff`                  |
+| Formatting            | `black`                 |
+| Testing               | `pytest`                |
+| Type checking         | `mypy` / `pyright`      |
+| Dependency management | `uv` / `poetry`         |
+| Packaging             | `hatch` / `setuptools`  |
+| Docs                  | `mkdocs` / `sphinx`     |
+| Import ordering       | `isort`                 |
+
 ## Testing
 
 Use pytest for tests, and include type checking + linting in your CI pipeline.
