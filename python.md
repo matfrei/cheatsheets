@@ -257,7 +257,7 @@ def fib(n: int) -> int:
 **TODO**: PEP8 andPEP20 (Zen of Python)
 
 ## Modern libraries and techiques
-Modern Libraries & Techniques
+**TODO**: Modern Libraries & Techniques
 
 |Purpose                |Tool                     |
 | --------------------- | ----------------------- |
