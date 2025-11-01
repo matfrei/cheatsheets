@@ -250,3 +250,19 @@ def fib(n: int) -> int:
 ## Security and Reliability
 **TODO**: Pydantic, pip-audit, safety, poetry-check
 
+## Project Structure and Packaging
+**TODO**: pyproject.toml vs setup.py,requirements.txt
+
+## Styleguides
+**TODO**: PEP8 andPEP20 (Zen of Python)
+
+## Modern libraries and techiques
+Modern Libraries & Techniques
+
+|Purpose                |Tool                     |
+| --------------------- | ----------------------- |
+|Data                   |polars                   |
+|Async & web            |fastapi, aiohttp         |
+|Config & CLI           |typer, pydantic, hydra   |
+|Output and Logging     |rich, loguru             |
+
